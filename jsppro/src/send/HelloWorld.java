@@ -25,9 +25,10 @@ public class HelloWorld extends HttpServlet {					// urlPatterns의 이름으로
 		//response.getWriter().append("Served at: ").append(request.getContextPath());
 		// 출력스트림											// 프로젝트명
 		
+		// 현재 문서의 한글값을 인코딩(utf-8)을 시켜준다.
 		response.setContentType("text/html; charset=UTF-8"); // 한글값 깨지는 것을 방지
 		PrintWriter out = response.getWriter();	// 출력 스트림 객체
-		HttpSession session = request.getSession();	// 세션 객체를 구해온다.
+		HttpSession session = request.getSession();	// 세션 객체
 		
 		out.println("<html>");
 		out.println("<body>");
