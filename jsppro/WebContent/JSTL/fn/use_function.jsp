@@ -13,13 +13,13 @@ length(str1) = ${fn:length(str1)} <br>
 toUpperCase(str1) = "${fn:toUpperCase(str1)}" <br>
 toLowerCase(str1) = "${fn:toLowerCase(str1)}" <br>
 substring(str1, 3, 6) = "${fn:substring(str1, 3, 6)}" <br>
-substringAfter(str1, str2) = "${fn:substringAfter(str1, str2)}" <br>
-substringBefore(str1, str2) = "${fn:substringBefore(str1, str2)}" <br>
+substringAfter(str1, str2) = "${fn:substringAfter(str1, str2)}" <br> <!-- str1에서 str2이후 문자만 출력 -->
+substringBefore(str1, str2) = "${fn:substringBefore(str1, str2)}" <br>	<!-- str1에서 str2이전 문자만 출력 -->
 trim(str1) = "${fn:trim(str1)}" <br>
 replace(str1, src, dest) = "${fn:replace(str1, " ", "-")}" <br>
 indexOf(str1, str2) = "${fn:indexOf(str1, str2)}" <br>
 startsWith(str1, str2) = "${fn:startsWith(str1, 'Fun')}" <br>
-endsWith(str1, str2) = "${fn:endsWith(str1, "합니다.")}" <br>
+endsWith(str1, str2) = "${fn:endsWith(str1, "합니다.")}" <br> <!-- 끝부분인"합니다. "에 공백이 있어서 false리턴 -->
 contains(str1, str2) = "${fn:contains(str1, str2)}" <br>
 containsIgnoreCase(str1, str2) = "${fn:containsIgnoreCase(str1, str2)}" <br>
 

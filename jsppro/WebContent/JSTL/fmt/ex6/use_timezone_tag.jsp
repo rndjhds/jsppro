@@ -12,6 +12,8 @@
                 dateStyle="full" timeStyle="full" />
 
 <br>
+
+<!-- 홍콩 시간 출력 -->
 <fmt:timeZone value="Hongkong">
 <fmt:formatDate value="${now}" type="both" 
                 dateStyle="full" timeStyle="full" />

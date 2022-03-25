@@ -3,7 +3,7 @@
 <!-- taglib은 사용자정의 태그어 -->
 <!-- 코어태그를 사용하기 위해서 prefix="c"설정 -->
 <!-- uri="http://java.sun.com/jsp/jstl/core"도 설정해줘야 한다. -->
-
+<!-- JSTL은 자료형이 없다 -->
 <c:set var="num1" value="${20}" />
 <c:set var="num2">
 10.5

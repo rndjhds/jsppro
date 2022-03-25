@@ -3,31 +3,31 @@
 <%@ taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql" %>
 <html>
 <head>
-<title>JSTL sql ë¼ì´ë¸ŒëŸ¬ë¦¬ ì‚¬ìš© ì˜ˆì œ</title>
+<title>JSTL sql ¶óÀÌºê·¯¸® »ç¿ë ¿¹Á¦</title>
 </head>
 <body>
 
 <sql:setDataSource var="conn" driver="oracle.jdbc.driver.OracleDriver" 
-				url="jdbc:oracle:thin:@localhost:1521:orcl"
+				url="jdbc:oracle:thin:@localhost:1521:xe"
 				user="scott" 
 				password="tiger"/>
 
-<sql:update dataSource="${conn}">
-	INSERT INTO test (num, name) VALUES (1, 'í™ê¸¸ë™')
+<%-- <sql:update dataSource="${conn}">
+	INSERT INTO test (num, name) VALUES (1, 'È«±æµ¿')
 </sql:update>
 <sql:update dataSource="${conn}">
-	INSERT INTO test (num, name) VALUES (2, 'ì¡°ì¤€ë™')
+	INSERT INTO test (num, name) VALUES (2, 'Á¶ÁØµ¿')
 </sql:update>
 <sql:update dataSource="${conn}">
-	INSERT INTO test (num, name) VALUES (3, 'í™ê¸¸ë™')
+	INSERT INTO test (num, name) VALUES (3, 'È«±æµ¿')
 </sql:update>
 <sql:update dataSource="${conn}">
-	INSERT INTO test (num, name) VALUES (4, 'í™ê¸¸ìˆœ')
-</sql:update>
+	INSERT INTO test (num, name) VALUES (4, 'È«±æ¼ø')
+</sql:update> --%>
 
 <sql:query var="rs" dataSource="${conn}">
 	SELECT * FROM test WHERE name=?
-	<sql:param>í™ê¸¸ë™</sql:param>
+	<sql:param>È«±æµ¿</sql:param>
 </sql:query>
 
 <c:forEach var="data" items="${rs.rows}">
